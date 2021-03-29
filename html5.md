@@ -237,3 +237,19 @@ to move through a long document, index is created.
     it is a description of the image.
     It gives idea to visually impaired people about the image. but they cant see it.
    Search engines like google, when page is indexed. it gives a better idea them to search.
+  
+## 
+
+Working with tables:
+
+<table border="1" cellspacing="0" cellpadding="3">
+cellspacing set to 0 to remove spacing created by borders of the cell.
+cellpadding is set to have some space in a cell around text.
+    
+    
+   alternate in css:
+   
+   table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+   }
