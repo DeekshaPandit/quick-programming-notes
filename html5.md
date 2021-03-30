@@ -148,9 +148,9 @@ preformatted tags: this is used to preserve spaces while rendering  html.
         
 ##
 
- blockquote and citation:
+  blockquote and citation:
  
-   <blockquote cite="https://www.worldwildlife.org/about">
+    <blockquote cite="https://www.worldwildlife.org/about">
         For 60 years, WWF has worked to help people and nature thrive.
 
         As the world’s leading conservation organization, WWF works in nearly 100 countries. At every level, we
@@ -253,3 +253,138 @@ cellpadding is set to have some space in a cell around text.
     border: 2px solid black;
     border-collapse: collapse;
    }
+   
+##
+
+caption can be provided to the table, to show about the table.
+
+<table><caption>My table </caption> </table>
+
+##
+
+Define a form on the web page: 
+
+   <form action="#" method="POST">
+    
+   </form>
+   
+   
+   action  can be a method which can save data of the form and method is GET/POST.
+  
+    <input type="text" required> 
+    
+    required is used to have some value in this input.
+    
+    <input type="text" max-length="5">
+    
+    max-length is to limit the input value to 5 chars.
+    
+    <input type="text" placeholder="Enter your name">
+    
+##    
+    
+how to group controls on a form
+
+  <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="first">First</label>
+            <input type="text" id="first" name="first" />
+            <br />
+            <label for="last">Last</label>
+            <input type="text" id="last" name="last" />
+            <br />
+            <label for="last">Email</label>
+            <input type="email" id="last" name="last" required />
+        </fieldset>
+    </form>
+    
+## 
+
+Google bot is Google's crawling bot.
+site map is needed to help google bot for intelligently crawling through your website.
+
+more info: https://developers.google.com/search/docs/guides/get-started
+
+
+##
+
+ link rel vs script src
+ 
+ stylesheet references are to go with link rel and script src is to have executable javascript reference.
+ 
+ https://stackoverflow.com/questions/12178429/whats-the-difference-between-using-link-and-script-tag-to-reference-javascript
+ 
+ ##
+
+ HTML5 API (Applicatipn Programming Interface)
+  - Drag and Drop
+  - Web Workers
+  - Web storage api
+  - web Sockets
+  - Media api
+  - GeoLocation api
+
+##
+
+Playing with Canvas
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Canvas</title>
+            <style>
+                #myCanvas {
+                    background-color: aqua;
+                }
+            </style>
+            <script>
+                window.onload = function () {
+                    var canvas = document.getElementById('myCanvas');
+                    if (canvas.getContext) {
+                    var ctx = canvas.getContext("2d")
+                    ctx.strokeStyle = "green"
+                    ctx.fillStyle = "green"
+                    ctx.strokeRect(50, 50, 100, 100)
+                    ctx.fillRect(200, 50, 100, 100)
+                    ctx.rect(350, 50, 100, 100)
+                    ctx.stroke();
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <canvas id="myCanvas" width="400" height="500"></canvas>
+        </body>
+     </html>
+
+
+More info: http://falcon80.com/HTMLCanvas/TextManipulation/AddText.html
+
+ ## 
+ 
+ CSS box model: 
+ 
+   -> margin
+     -> border
+        -> padding
+            -> actual element
+            
+            
+ ##
+ 
+ page layout
+ 
+ <div id="content"> 
+    <header> header div </header>
+    <div id="content1"> </div>
+    <div id="content2"> </div>
+    <div id="content3"> </div>
+    <footer> footer div</footer>
+</div>
+
+
+## 
+
+to design responsive stylesheet:
+ http://getskeleton.com/
